@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Sharing App</title>
+  <link rel="stylesheet" href="style/styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>RecipeShare</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#add-recipe">Add Recipe</a></li>
+        <li><a href="#view-recipes">View Recipes</a></li>
+        <li><button id="toggle-theme">Toggle Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="add-recipe">
+      <h2>Add a New Recipe</h2>
+      <form id="recipe-form">
+        <input type="text" id="recipe-name" placeholder="Recipe Name" required />
+        <textarea id="ingredients" placeholder="Ingredients (comma separated)" required></textarea>
+        <select id="category" required>
+          <option value="">Select Category</option>
+          <option>Breakfast</option>
+          <option>Lunch</option>
+          <option>Dinner</option>
+          <option>Dessert</option>
+          <option>Drinks</option>
+        </select>
+        <textarea id="steps" placeholder="Preparation Steps (supports *bold*, _italic_, ~underline~)" required></textarea>
+        <button type="submit">Add Recipe</button>
+      </form>
+    </section>
+
+    <section id="filter">
+      <h3>Filter by Category</h3>
+      <select id="filter-category">
+        <option value="All">All</option>
+        <option>Breakfast</option>
+        <option>Lunch</option>
+        <option>Dinner</option>
+        <option>Dessert</option>
+        <option>Drinks</option>
+      </select>
+    </section>
+
+    <section id="view-recipes">
+      <h2>Recipes</h2>
+      <div id="recipe-list"></div>
+    </section>
+  </main>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: #ff7f50;
+  padding: 10px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+form, section {
+  padding: 20px;
+}
+
+textarea, input, select {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+}
+
+#recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.dark {
+  background: #121212;
+  color: #eee;
+}
+
+.dark .card {
+  background: #333;
+  border-color: #444;
+}
